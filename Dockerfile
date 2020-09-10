@@ -4,7 +4,7 @@ RUN apt-get update && \
     apt-get install -y wget gnupg2 git \
     build-essential zlib1g-dev libpcre3 libpcre3-dev unzip uuid-dev
 #   wget libgd2-xpm-dev libgeoip-dev libperl-dev libxslt1-dev lsb-release ca-certificates debhelper libssl-dev
-RUN apt-key adv --no-tty  --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62
+RUN apt-key adv --no-tty  --keyserver hkp://pool.sks-keyservers.net:80 --recv-keys 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62
 RUN echo "deb-src http://nginx.org/packages/mainline/debian/ buster nginx" >> /etc/apt/sources.list
 
 WORKDIR /tmp
